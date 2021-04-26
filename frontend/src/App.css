@@ -1,0 +1,405 @@
+/**/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/**/
+.landingContainer {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'box1 box2';
+}
+
+.landingContainer .boxL1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: box1;
+  text-align: right;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 20px;
+}
+
+.landingContainer .boxL2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: box2;
+  text-align: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 20px;
+}
+
+.landingContainer img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 30%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 20%;
+}
+
+.landingContainer h1 {
+  font-size: 60px;
+}
+
+.landingContainer p {
+  font-size: 22px;
+}
+
+.landingContainer button {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #363030;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 55px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.landingContainer button:hover {
+  color: #363030;
+  border: 1px solid #363030;
+  background-color: #ffffff;
+}
+
+/**/
+.sellContainer {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.sellContainer .backgroundImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 30%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.sellContainer .closeImgSection img {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.sellContainer .viewBooksButton {
+  border: 1px solid #363030;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #363030;
+  background-color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px;
+  margin-top: 30px;
+  font-size: 12px;
+  float: right;
+}
+
+.sellContainer .viewBooksButton:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #363030;
+}
+
+.sellContainer .addContainer {
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sellContainer .addContainer h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.sellContainer .addContainer input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 10px;
+  outline: none;
+}
+
+.sellContainer .addContainer button {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #363030;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 55px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.sellContainer .addContainer button:hover {
+  color: #363030;
+  border: 1px solid #363030;
+  background-color: #ffffff;
+}
+
+/**/
+.buyContainer {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.buyContainer .backgroundImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 30%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 50%;
+}
+
+.buyContainer .closeImgSection img {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.buyContainer .searchContainer {
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.buyContainer .searchContainer h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.buyContainer .searchContainer input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 10px;
+  outline: none;
+}
+
+.buyContainer .searchContainer button {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #363030;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 55px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.buyContainer .searchContainer button:hover {
+  color: #363030;
+  border: 1px solid #363030;
+  background-color: #ffffff;
+}
+
+/**/
+.resultsContainer {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.resultsContainer .backgroundImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 30%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.resultsContainer .closeImgSection img {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/**/
+.booksContainer {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.booksContainer .backgroundImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 30%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 20%;
+}
+
+.booksContainer .closeImgSection img {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.booksContainer .tableContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.booksContainer .tableContainer table {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.booksContainer .tableContainer table th {
+  background-color: #363030;
+  color: white;
+  padding: 10px;
+}
+
+.booksContainer .tableContainer table td {
+  padding: 10px;
+}
+
+.booksContainer .tableContainer table tr:nth-child(even) {
+  background-color: #e4d4d4;
+}
+
+.booksContainer .tableContainer .deleteBtn {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.booksContainer .tableContainer .editBtn {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/**/
+.editContainer {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.editContainer .backgroundImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 30%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.editContainer .closeImgSection img {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.editContainer .editContainer {
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.editContainer .editContainer h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.editContainer .editContainer input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 10px;
+  outline: none;
+}
+
+.editContainer .editContainer button {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #363030;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 55px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.editContainer .editContainer button:hover {
+  color: #363030;
+  border: 1px solid #363030;
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=App.css.map */
